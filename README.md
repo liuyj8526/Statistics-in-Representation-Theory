@@ -6,5 +6,7 @@ Decomposable-Groups-Original: Script for testing decomposable groups in original
 Decomposable-Groups-Generalized: Script for testing decomposable (G,H) groups. Only tests for core-free H but can be modified to find all H
 
 Group properties: 
-Can be used to find if group is Frobenius, find the center, and generate the Hughes Thompson Group (hpgroup). 
+Can be used to find if group is Frobenius, find the center, and generate the Hughes Thompson Group (hpgroup) and Ph(G) group. 
 
+Output Modifier:
+Axulliary.
