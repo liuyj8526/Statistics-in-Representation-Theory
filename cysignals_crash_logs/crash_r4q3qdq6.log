@@ -1,0 +1,148 @@
+GNU gdb (Ubuntu 9.1-0ubuntu1) 9.1
+Copyright (C) 2020 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word".
+[New LWP 11568]
+[New LWP 11569]
+[New LWP 11570]
+[New LWP 11571]
+[New LWP 11572]
+[New LWP 11573]
+[New LWP 11574]
+[New LWP 11576]
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+0x00007fc81b28843e in epoll_wait (epfd=30, events=0x7fc6e9197e70, maxevents=3, timeout=-1)
+    at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+
+Stack backtrace
+---------------
+    at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+        resultvar = 18446744073709551612
+        sc_cancel_oldtype = 0
+        sc_ret = <optimized out>
+#1  0x0000000000632038 in ?? ()
+No symbol table info available.
+#2  0x000000000050204e in ?? ()
+No symbol table info available.
+#3  0x0000000000567325 in _PyEval_EvalFrameDefault ()
+No symbol table info available.
+#4  0x00000000005654d2 in _PyEval_EvalCodeWithName ()
+No symbol table info available.
+#5  0x00000000005f1bc5 in _PyFunction_Vectorcall ()
+No symbol table info available.
+#6  0x0000000000567325 in _PyEval_EvalFrameDefault ()
+No symbol table info available.
+#7  0x00000000005f19cb in _PyFunction_Vectorcall ()
+No symbol table info available.
+#8  0x0000000000567325 in _PyEval_EvalFrameDefault ()
+No symbol table info available.
+#9  0x00000000005f19cb in _PyFunction_Vectorcall ()
+No symbol table info available.
+#10 0x0000000000567325 in _PyEval_EvalFrameDefault ()
+No symbol table info available.
+#11 0x00000000005f19cb in _PyFunction_Vectorcall ()
+No symbol table info available.
+#12 0x0000000000567325 in _PyEval_EvalFrameDefault ()
+No symbol table info available.
+#13 0x00000000005f19cb in _PyFunction_Vectorcall ()
+No symbol table info available.
+#14 0x0000000000567325 in _PyEval_EvalFrameDefault ()
+No symbol table info available.
+#15 0x00000000005654d2 in _PyEval_EvalCodeWithName ()
+No symbol table info available.
+#16 0x0000000000507e8f in ?? ()
+No symbol table info available.
+#17 0x0000000000568404 in _PyEval_EvalFrameDefault ()
+No symbol table info available.
+#18 0x00000000005654d2 in _PyEval_EvalCodeWithName ()
+No symbol table info available.
+#19 0x0000000000686d53 in PyEval_EvalCode ()
+No symbol table info available.
+#20 0x00000000005fc760 in ?? ()
+No symbol table info available.
+#21 0x00000000005c075c in ?? ()
+No symbol table info available.
+#22 0x00000000005671fd in _PyEval_EvalFrameDefault ()
+No symbol table info available.
+#23 0x00000000005654d2 in _PyEval_EvalCodeWithName ()
+No symbol table info available.
+#24 0x00000000005f1bc5 in _PyFunction_Vectorcall ()
+No symbol table info available.
+#25 0x00000000005671fd in _PyEval_EvalFrameDefault ()
+No symbol table info available.
+#26 0x00000000005654d2 in _PyEval_EvalCodeWithName ()
+No symbol table info available.
+#27 0x00000000005f1bc5 in _PyFunction_Vectorcall ()
+No symbol table info available.
+#28 0x00000000005f0e3e in PyObject_Call ()
+No symbol table info available.
+#29 0x00000000006af348 in ?? ()
+No symbol table info available.
+#30 0x00000000006af735 in Py_RunMain ()
+No symbol table info available.
+#31 0x00000000006af959 in Py_BytesMain ()
+No symbol table info available.
+#32 0x00007fc81b18d0b3 in __libc_start_main (main=0x4ec640 <main>, argc=5, argv=0x7ffde96f6188, init=<optimized out>, 
+    fini=<optimized out>, rtld_fini=<optimized out>, stack_end=0x7ffde96f6178) at ../csu/libc-start.c:308
+        self = <optimized out>
+        result = <optimized out>
+        unwind_buf = {cancel_jmp_buf = {{jmp_buf = {7010672, 7129323880335899322, 6252944, 140728519844224, 0, 0, 
+                -7130429022640440646, -7106604920124507462}, mask_was_saved = 0}}, priv = {pad = {0x0, 0x0, 0x5, 
+              0x7ffde96f6188}, data = {prev = 0x0, cleanup = 0x0, canceltype = 5}}}
+        not_first_call = <optimized out>
+#33 0x00000000005f69be in _start ()
+No symbol table info available.
+>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+Cython backtrace
+----------------
+#0  0x00007fc81b2883e0 in epoll_wait () at /build/glibc-YYA7BZ/glibc-2.31/misc/../sysdeps/unix/sysv/linux/epoll_wait.c:30
+#1  0x0000000000000000 in ?? ()
+#2  0x0000000000000000 in ?? ()
+#3  0x0000000000566b00 in _PyEval_EvalFrameDefault ()
+#4  0x0000000000565270 in _PyEval_EvalCodeWithName ()
+#5  0x00000000005f1820 in _PyFunction_Vectorcall ()
+#6  0x0000000000566b00 in _PyEval_EvalFrameDefault ()
+#7  0x00000000005f1820 in _PyFunction_Vectorcall ()
+#8  0x0000000000566b00 in _PyEval_EvalFrameDefault ()
+#9  0x00000000005f1820 in _PyFunction_Vectorcall ()
+#10 0x0000000000566b00 in _PyEval_EvalFrameDefault ()
+#11 0x00000000005f1820 in _PyFunction_Vectorcall ()
+#12 0x0000000000566b00 in _PyEval_EvalFrameDefault ()
+#13 0x00000000005f1820 in _PyFunction_Vectorcall ()
+#14 0x0000000000566b00 in _PyEval_EvalFrameDefault ()
+#15 0x0000000000565270 in _PyEval_EvalCodeWithName ()
+#16 0x0000000000000000 in ?? ()
+#17 0x0000000000566b00 in _PyEval_EvalFrameDefault ()
+#18 0x0000000000565270 in _PyEval_EvalCodeWithName ()
+#19 0x0000000000686d30 in PyEval_EvalCode ()
+#20 0x0000000000000000 in ?? ()
+#21 0x0000000000000000 in ?? ()
+#22 0x0000000000566b00 in _PyEval_EvalFrameDefault ()
+#23 0x0000000000565270 in _PyEval_EvalCodeWithName ()
+#24 0x00000000005f1820 in _PyFunction_Vectorcall ()
+#25 0x0000000000566b00 in _PyEval_EvalFrameDefault ()
+#26 0x0000000000565270 in _PyEval_EvalCodeWithName ()
+#27 0x00000000005f1820 in _PyFunction_Vectorcall ()
+#28 0x00000000005f0de0 in PyObject_Call ()
+#29 0x0000000000000000 in ?? ()
+#30 0x00000000006af3c0 in Py_RunMain ()
+#31 0x00000000006af930 in Py_BytesMain ()
+#32 0x00007fc81b18cfc0 in __libc_start_main () at /build/glibc-YYA7BZ/glibc-2.31/csu/../csu/libc-start.c:308
+#33 0x00000000005f6990 in _start ()
+
+[Inferior 1 (process 11563) detached]
+30	../sysdeps/unix/sysv/linux/epoll_wait.c: No such file or directory.
