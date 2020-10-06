@@ -8,5 +8,3 @@ Decomposable-Groups-Generalized: Script for testing decomposable (G,H) groups. O
 Group properties: 
 Methods to check Frobenius, find the center, and generate the Hughes Thompson Group (hpgroup) and Ph(G) group. 
 
-Output Modifier:
-Axulliary.
