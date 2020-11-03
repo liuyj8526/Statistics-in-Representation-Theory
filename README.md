@@ -1,5 +1,5 @@
 # DOMath 2020 Statistics in Representation Theory 
-Written for SageMath 9.0 
+Contributers: Yijia Liu, Max Fleischer, Zizai Cui
 
 Decomposable-Groups-Original: Script for testing decomposable groups in original setting.
 
